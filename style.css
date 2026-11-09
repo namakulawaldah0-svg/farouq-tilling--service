@@ -1,0 +1,448 @@
+
+/* =================================
+   FAROUQ TILING SERVICES
+   PREMIUM WEBSITE DESIGN
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+.header {
+    background: #0b1f3a;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.logo h1 span {
+    color: #d4af37;
+}
+
+.logo p {
+    color: #ddd;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    background:
+        linear-gradient(rgba(5, 19, 38, 0.78),
+        rgba(5, 19, 38, 0.78)),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #d4af37;
+    display: block;
+}
+
+.hero-content > p:not(.welcome) {
+    font-size: 18px;
+    color: #eeeeee;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-gold {
+    background: #d4af37;
+    color: #0b1f3a;
+}
+
+.btn-gold:hover {
+    background: #f0cc55;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #0b1f3a;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading > p {
+    color: #c49b24;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.section-heading h2 {
+    color: #0b1f3a;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.section-heading span {
+    color: #777;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about > p {
+    max-width: 850px;
+    margin: auto;
+    color: #555;
+    font-size: 17px;
+}
+
+/* SERVICES */
+
+.services {
+    background: #f5f7fa;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 8px;
+    border-bottom: 4px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+    color: #0b1f3a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+}
+
+/* WHY CHOOSE US */
+
+.why-us {
+    background: #0b1f3a;
+    color: white;
+}
+
+.why-us .section-heading h2 {
+    color: white;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.features > div {
+    padding: 25px;
+}
+
+.features h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.features p {
+    color: #ddd;
+}
+
+/* PROJECTS */
+
+.projects {
+    text-align: center;
+}
+
+.project-message {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.contact-details {
+    margin: 30px 0;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #071629;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer h3 {
+    color: #d4af37;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px;
+    color: #ddd;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero-content > p:not(.welcome) {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    color: #1a2639;
+    margin-bottom: 25px;
+}
+
+.service-box {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+    color: #c49a36;
+}
+
+.service-box p {
+    color: #444;
+}
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a2639;
+    color: white;
+}
+
+.contact h2 {
+    color: #c49a36;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact a:hover {
+    background-color: #128C7E;
+}
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+nav {
+    background-color: #1a2639;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c49a36;
+}
